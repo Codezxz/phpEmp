@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Assignment</title>
+    </head>
+
+    <body style="background-color:rgb(193, 159, 224);">
+    <div align = "center">
+        <h1>This is a Test</h1>
+        <h3>Welcome to the form!</h3>
+    </div>
+    
+    <form action="connect.php" method = "post">
+    <table border = "1" align = "center">
+        <tr>
+            <td>
+            <label >Employee ID :</label><br></td>
+            <td><input type="number" id="emp_id" name="emp_id" value=""><br><p></td>
+        </tr>
+        <tr>
+            <td>
+            <label >Employee Name :</label><br></td>
+            <td><input type="text" id="emp_name" name="emp_name" value="Nirnay"><br><br></td>
+        </tr>
+        <tr>
+            <td>
+            <label >Employee Sex :</label><br></td>
+            <td><input type="radio" id="emp_sex" name="emp_sex" value="Female">
+                <label >Female </label><br><br>
+            <input type="radio" id="emp_sex" name="emp_sex" value="Male">
+                <label >Male </label><br><br></td>
+        </tr>
+        <tr>
+            <td>
+            <label >Employee Contact Number :</label><br></td>
+            <td><input type="number" id="emp_contact" name="emp_contact" value="8828480007"><br><br></td>
+        </tr>
+        <tr>
+            <td>
+            <label >Employee City :</label><br></td>
+            <td><input type="text" id="emp_city" name="emp_city" value="Navi Mumbai"><br><br></td>
+        </tr>
+        <tr>
+            <td>
+                <label >Choose the State :</label>
+            </td>
+            <td>
+                <select name="emp_state" id="emp_state">
+                <option >Arunanchal Pradesh</option>
+                <option >Punjab</option>
+                <option >Maharashtra</option>
+            </td>
+        </tr>
+        <p>
+        <tr>
+            <td>
+            <label >Employee Hobbies :</label><br><p></td>
+                
+            <td><label >Coding</label>
+                <input type="checkbox" id="emp_hobbies" name="emp_hobbies" value="Coding"><br><br>
+                <label >Cycling</label>
+                <input type="checkbox" id="emp_hobbies" name="emp_hobbies" value="Cycling"><br><br>
+                <label >Reading</label>
+                <input type="checkbox" id="emp_hobbies" name="emp_hobbies" value="Reading"><br><br>
+                </td>
+        </tr>
+    <tr>
+        <td>
+        <label >Employee Resume :</label><br></td>
+        <form action="/upload.php">
+        <td><input type="file" id="emp_resume" name="emp_resume"></td>
+        <td><input type="submit" name="emp_resume" value="submit"></td>
+        </form>
+    </tr>
+    
+<tr>
+    
+    <td colspan = "2" align = "center">
+        <input type="submit" value="Submit">
+        <input type="reset">
+  </td>
+</tr>
+</body>
+
